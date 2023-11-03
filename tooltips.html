@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dédalo - Tooltips</title>
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="ESTILO/bootstrap-4.6.2-dist/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="ESTILO/style.css">
+  </head>
+
+  
+
+  <body>
+
+    <div class="container-fluid border">
+      <header class="blog-cabecalho py-3">
+        <div class="container-fluid text-center">
+          <h1 class="display-3">D É D A L O</h1>
+          <small class="text-muted">
+            <h4>Tudo que você precisa saber sobre o Bootstrap 4.6</h4>
+          </small>
+          <br>
+        </div>
+      </header>
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a href="#" class="navbar-brand"><img
+            src="IMAGENS/logo_dedalo.png" alt="Logo da Dédalo"
+            style="max-width: 60px;"></a>
+        <button class="navbar-toggler" type="button"
+          data-toggle="collapse" data-target="#navegacao"
+          aria-controls="navegacao" aria-expanded="true"
+          aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navegacao">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a href="index.html" class="nav-link">Bootstrap 4.6
+                <span class="sr-only">(atual)</span>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a href="instalacao.html" class="nav-link">Instalação</a>
+            </li>
+            <li class="nav-item active">
+              <a href="grids.html" class="nav-link">Grids</a>
+            </li>
+            <li class="nav-item active">
+              <a href="navbar.html" class="nav-link">Navbar</a>
+            </li>
+            <li class="nav-item active">
+              <a href="table.html" class="nav-link">Table</a>
+            </li>
+            <li class="nav-item active">
+              <a href="forms.html" class="nav-link">Forms</a>
+            </li>
+            <li class="nav-item active">
+              <a href="tipografia.html" class="nav-link">Tipografia</a>
+            </li>
+            <li class="nav-item active">
+              <div class="dropdown">
+                <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Componentes
+                </a>
+              
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="badge.html">Badge</a>
+                  <a class="dropdown-item" href="breadcrumb.html">Breadcrumb</a>
+                  <a class="dropdown-item" href="caurosel.html">Carousel</a>
+                  <a class="dropdown-item" href="tooltips.html">Tooltips</a>
+                  <a class="dropdown-item" href="mediacard.html">Media e Card</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <div class="dropdown">
+                <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Utilidades
+                </a>
+              
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="cores.html">Cores</a>
+                  <a class="dropdown-item" href="marginpadding.html">Margin e Padding</a>
+                  <a class="dropdown-item" href="bordas.html">Bordas</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <form action="post" class="form-inline mt-2 mt-md-0">
+            <input type="text" placeholder="Pesquise no site"
+              aria-label="Pesquise no site" class="form-control">
+            <button class="btn btn-outline-success my-2 my-sm-0"
+              type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+
+    <main role="main" class="container-fluid">
+      <div class="row">
+
+        <aside class="col-sm-2 blog-sidebar border">
+          <div class="p-3 mb-3 bg-light rounded">
+            <h4 class="font-italic">Você está aqui:</h4>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Dédalo</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Tooltips</li>
+              </ol>
+            </nav>
+          </div>
+          <div class="p-3 mb-3 bg-light rounded">
+            <h4 class="font-italic">Sobre nós:</h4>
+            <p class="mb-0">Somos um time de <strong><em>pessoas legais</em></strong> que gostam de <strong><em>programação</em></strong> e estavam meio <strong><em>entediadas</em></strong>.</p>
+          </div>
+
+          <div class="p-3">
+            <h4 class="font-italic">Veja outros posts!</h4>
+            <ol class="list-unstyled mb-0">
+              <li><a
+                  href="index.html">Bootstrap 4.6</a></li>
+              <li><a
+                  href="instalacao.html">Instalação</a></li>
+              <li><a
+                  href="grids.html">Grids</a></li>
+              <li><a
+                  href="navbar.html">Navbar</a></li>
+              <li><a
+                  href="table.html">Table</a></li>
+              <li><a
+                  href="forms.html">Forms</a></li>
+              <li><a
+                  href="tipografia.html">Tipografia</a></li>
+              <li><a
+                  href="badge.html">Badge</a></li>
+              <li><a
+                  href="breadcrumb.html">Breadcrumb</a></li>
+              <li><a
+                  href="caurosel.html">Carousel</a></li>
+              <li><a
+                  href="tooltips.html">Tooltips</a></li>
+                  <li><a
+                    href="mediacard.html">Media e Card</a></li>
+                <li><a
+                    href="cores.html">Cores</a></li>
+                <li><a
+                    href="marginpadding.html">Margin e Padding</a></li>
+                <li><a
+                    href="bordas.html">Bordas</a></li>
+                
+            </ol>
+          </div>
+
+          <div class="p-3">
+            <h4 class="font-italic">Onde nos encontrar, por aí:</h4>
+            <ol class="list-unstyled">
+              <li>
+                <a
+                href="https://instagram.com/dheurymy" target="_blank"
+                rel="noopener">Instagram do Dheurymy</a>
+              </li>
+              <li>
+                <a
+                href="https://instagram.com/ezmoraes" target="_blank"
+                rel="noopener">Instagram do Moraes</a>
+              </li>
+              <li>
+                <a
+                href="https://instagram.com/jr_reisss" target="_blank"
+                rel="noopener">Instagram do Junior</a>
+              </li>
+              <li>
+                <a
+                href="https://instagram.com/andre_ffs19" target="_blank"
+                rel="noopener">Instagram do André</a>
+              </li>
+              <li>
+                <a
+                href="https://instagram.com/rejjane_mendes" target="_blank"
+                rel="noopener">Instagram da Rejane</a>
+              </li>
+            </ol>
+          </div>
+        </aside>
+
+        <div class="col-md-1"></div>
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post text-center">
+            <br><br>
+            <h2 class="blog-post-titulo">Tooltips em Bootstrap 4.6</h2>
+            <p class="blog-post-dados">Escrito por <a
+                href="https://instagram.com/ezmoraes" target="_blank"
+                rel="noopener">Ezequiel</a>, em 03 de novembro de 2023.</p>
+
+            <p>paragrafo 01 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque explicabo animi nobis, repellat corporis sit odio alias natus deleniti totam necessitatibus? Eveniet esse beatae reiciendis facilis fugiat excepturi consequatur quis.</p>
+
+            <img src="IMAGENS/Criadores_Bootstrap.jpg"
+              alt="Criadores do Bootstrap" class="img-fluid">
+            <br>
+
+            <p><br>paragrafo 02</p>
+
+            <h3>subtitulo 01</h3>
+            <p>Gparagrafo 04 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet ab atque suscipit rerum? Molestiae vel repudiandae praesentium minus pariatur hic, incidunt sapiente dolorem voluptate vero dolores quo nesciunt quibusdam et!</p>
+
+            <h3>subtitulo 02</h3>
+            <p>Gparagrafo 05 Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deleniti at officia quasi totam iure rerum dignissimos vitae, possimus excepturi, voluptates eaque, quas deserunt. Harum consequuntur neque tenetur quod magnam.</p>
+
+          </div>
+          <div class="col-md-1"></div>
+
+        </div>
+
+      </main>
+
+      <footer class="blog-rodape border">
+        <p>Template de blog construído sobre o <a
+            href="https://getbootstrap.com/">Bootstrap</a>, para a disciplina de Introdução a Programação Web do curso de Análise e Desenvolvimento de Sistemas da Faculdade Laboro.
+        </p>
+        <div class="container-fluid border">
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-sm-2">
+              <img src="IMAGENS/dheurymy.jpg" alt="Dheurymy" class="img-fluid card-img img-thumbnail ">
+              <br>
+              Rycherd Dheurymy
+            </div>
+            <div class="col-sm-2">
+              <img src="IMAGENS/andre.jpg" alt="André" class="img-fluid card-img img-thumbnail ">
+              <br>
+              André Frazão
+            </div>
+            <div class="col-sm-2">
+              <img src="IMAGENS/junior.jpg" alt="Junior" class="img-fluid card-img img-thumbnail ">
+              <br>
+              José Junior
+            </div>
+            <div class="col-sm-2">
+              <img src="IMAGENS/moraes.jpg" alt="Ezequiel" class="img-fluid card-img img-thumbnail ">
+              <br>
+              Ezequiel Moraes
+            </div>
+            <div class="col-sm-2">
+              <img src="IMAGENS/rejane.jpg" alt="Rejane" class="img-fluid card-img img-thumbnail ">
+              <br>
+              Rejane Mendes
+            </div>
+            <div class="col-1"></div>
+          </div>
+        </div>
+        <p>
+          <a href="#">Voltar
+            ao topo</a>
+        </p>
+      </footer>
+
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+
+    <!--<script src="ESTILO/popper/popper.min.js"></script>
+   <script src="ESTILO/jquery/jquery-3.7.1.slim.min.js"></script>
+   <script src="ESTILO/bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>-->
+   
+  </html>
