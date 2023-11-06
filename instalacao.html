@@ -234,18 +234,80 @@
               alt="CDN" class="img-fluid">
             <br>
 
-            <p>Para utilizar o CDN do jsDelivr em seus projetos basta
+            <p><br>Para utilizar o CDN do jsDelivr em seus projetos basta
               linkar os plugins do CDN no seu código, como demonstrado a
-              seguir: <br></p>
+              seguir: <br>
 
+              <pre class="text-left pre-scrollable">
+                <code data-lang="html">
+                  &lt;!doctype html&gt;
+                    &lt;html lang="pt-br"&gt;
+                      &lt;head&gt;
+                        &lt;!-- Required meta tags --&gt;
+                        &lt;meta charset="utf-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+
+                        &lt;!--Adiciona o Bootstrap CSS --&gt;
+                        &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" <br>integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"&gt;
+
+                        &lt;title&gt;Hello, world!&lt;/title&gt;
+                      &lt;/head&gt;
+                      &lt;body&gt;
+                        &lt;h1&gt;Hello, world!&lt;/h1&gt;
+                      &lt;/body&gt;
+
+                      &lt;!-- Adiciona o jQuery ao código --&gt;
+                        &lt;script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" <br>integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"&gt;&lt;/script&gt;
+                        &lt;!-- Adiciona o popper ao código --&gt;
+                        &lt;script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" <br>integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"&gt;&lt;/script&gt;
+                        &lt;!-- Adiciona o Bootstrap JS ao código --&gt;
+                        &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" <br>integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"&gt;&lt;/script&gt;
+                        --&gt;
+
+                    &lt;/html&gt;
+                </code>
+              </pre>
+
+            <br>Dessa forma, os plugins do Bootstrap 4.6 estarão linkados no código e o Bootstrap 4.6 poderá ser utilizado.
+            </p>
+
+            <h3><br>Utilizando o Pacote de Código Compilado do Bootstrap 4.6</h3>
+            <p><br>Para que o pacote de código compilado possa ser utilizado, deve-se realizar o download do arquivo do Bootstrap 4.6 na 
             
+              <a href="https://getbootstrap.com/docs/4.6/getting-started/download/">página de download</a>
 
-            <h3>subtitulo 02</h3>
-            <p>Gparagrafo 05 Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Assumenda deleniti at officia quasi totam
-              iure rerum dignissimos vitae, possimus excepturi, voluptates
-              eaque, quas deserunt. Harum consequuntur neque tenetur quod
-              magnam.</p>
+              do site oficial do Bootstrap. Além disso, deve-se realizar também o download das bibliotecas <a href="https://code.jquery.com/jquery-3.7.1.slim.min.js">jQuery</a> e <a href="https://unpkg.com/@popperjs/core@2.11.8/dist/umd/popper.min.js">Popper</a>. Uma vez baixado, descompacte a pasta comprimida e verá algo como isso:
+
+              <pre class="text-left pre-scrollable">
+                <code class="language-plaintext" data-lang="plaintext">
+                bootstrap/
+                ├── css/
+                │   ├── bootstrap-grid.css
+                │   ├── bootstrap-grid.css.map
+                │   ├── bootstrap-grid.min.css
+                │   ├── bootstrap-grid.min.css.map
+                │   ├── bootstrap-reboot.css
+                │   ├── bootstrap-reboot.css.map
+                │   ├── bootstrap-reboot.min.css
+                │   ├── bootstrap-reboot.min.css.map
+                │   ├── bootstrap.css
+                │   ├── bootstrap.css.map
+                │   ├── bootstrap.min.css
+                │   └── bootstrap.min.css.map
+                └── js/
+                    ├── bootstrap.bundle.js
+                    ├── bootstrap.bundle.js.map
+                    ├── bootstrap.bundle.min.js
+                    ├── bootstrap.bundle.min.js.map
+                    ├── bootstrap.js
+                    ├── bootstrap.js.map
+                    ├── bootstrap.min.js
+                    └── bootstrap.min.js.map
+                  </code>
+                </pre>
+
+            Basicamente, isto é o Bootstrap: arquivos compilados, para uso rápido em qualquer projeto web, sendo necessário apenas linkar os arquivos em seu código html para usar a biblioteca. Existem CSS e JS compilados (bootstrap.*), assim como CSS e JS compilados e minificados (bootstrap.min*). Source maps CSS (bootstrap.*.map) estão disponíveis para uso em certas ferramentas de desenvolvedores dos browsers. Arquivos JS bundle (bootstrap.bundle.js e a versão minificada bootstrap.bundle.min.js) usam Popper, mas não jQuery.
+            </p>
 
           </div>
           <div class="col-md-1"></div>
